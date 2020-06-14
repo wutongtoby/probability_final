@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 # %matplotlib inline
 sns.set_style('darkgrid')
+
 # TODO
 df = pd.read_csv('FILE_NAME')
 df.head()
@@ -54,6 +55,7 @@ pred_nb = clf_nb.predict(X_test)
 acc_nb = accuracy_score(pred_nb, y_test)
 print(acc_nb)
 
+# input the proportion of that chocolate to predict your type!
 a = [[0.1325, 0.277]]
 pred_nb = clf_nb.predict(a)
 print(pred_nb)
